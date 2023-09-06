@@ -102,6 +102,17 @@ export default function HomePage() {
 
 ----
 
+Definizione di Hooking da wikipidia ( cos'è un hook? )
+
+* Sono funzioni che tappano in un momento preciso o processo dell'applicazione per creare una funzionalitá personalizzata. 
+* In software development, ci sono hooks ovunque: 
+  * Come middleware hook
+  * Come Webhook
+  * Come response in specific events 
+  * Per estendere una funzionalità ( React )
+
+----
+
 ### Esempio creazione custom Hook
 
 ```js

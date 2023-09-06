@@ -1,12 +1,12 @@
 # Materiali utili da leggere prima della lezione
 
-I links per ciascuna lezione sono in ordine di importanza. Non è necessario leggerli tutti, ma se hai tempo per leggerne alcuni, inizia dall'inizio.
+I links per ciascuna lezione sono in ordine di importanza. Non è necessario leggerli tutti, ma se hai tempo per leggerne alcuni, inizia dai primi.
 
 L'obiettivo di queste letture è farti riflettere su ciò che verrà trattato nella lezione.
 
 Tieni presente che non sono presenti pre-readings materials per ogni lezione. 
 
-## 01 - Intro To Modern Web Development
+## 01 - Intro Modern Web Development
 
 * https://www.simplethread.com/javascript-modules-and-code-bundling-explained/
 * https://ponyfoo.com/articles/brief-history-of-modularity
@@ -17,7 +17,7 @@ Tieni presente che non sono presenti pre-readings materials per ogni lezione.
 * https://en.wikipedia.org/wiki/Build_automation
 * https://en.wikipedia.org/wiki/Package_manager
 
-## 02 - Intro To React And Component
+## 02 - Intro React e Component
 
 * https://learnreact.design/posts/what-is-react
 * https://www.freecodecamp.org/news/html-vs-jsx-whats-the-difference/
@@ -34,7 +34,7 @@ Tieni presente che non sono presenti pre-readings materials per ogni lezione.
 * https://react.dev/reference/react-dom/components/textarea
 * https://react.dev/learn/sharing-state-between-components
 
-## 06 - Component Lifecycle Hooks And Api Requests
+## 06 - Component Lifecycle Hooks e Api Requests
 
 * https://react.dev/learn/synchronizing-with-effects
 * https://react.dev/reference/react/useEffect#my-effect-runs-twice-when-the-component-mounts
@@ -43,7 +43,7 @@ Tieni presente che non sono presenti pre-readings materials per ogni lezione.
 * https://react.dev/learn/lifecycle-of-reactive-effects
 * https://react.dev/reference/react/useLayoutEffect
 
-## 07 - React Router And The Context Api
+## 07 - React Router
 
 * https://reactrouter.com/en/main/start/overview
 * https://reactrouter.com/en/main/start/concepts
