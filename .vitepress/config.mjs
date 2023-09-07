@@ -4,7 +4,8 @@ export default defineConfig({
   title: "React MasterClass Materials",
   description: "React MasterClass Materials",
   cleanUrls: true,
-  themeConfig: {    
+  themeConfig: { 
+    logo: "https://asset.brandfetch.io/idXWV8rEmc/id4RiI5qw_.png", 
     search: {
       provider: 'local'
     },
