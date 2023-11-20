@@ -56,9 +56,9 @@ Ogni update avviene principalmente in 3 steps:
 
 ### Initial Render (Mount)
 
-* Al primo Render - primo montaggio <!-- .element: class="fragment" -->
-* Rendering component - nodi del DOM sono creati <!-- .element: class="fragment" -->
-* Consegna sul DOM - gli elementi vengo aggiungi sul dom con appenChild <!-- .element: class="fragment" -->
+* Viene triggerato il primo Render - Primo montaggio <!-- .element: class="fragment" -->
+* Rendering component - Nodi del DOM vengono creati <!-- .element: class="fragment" -->
+* Consegna sul DOM - Gli elementi vengo aggiungi sul dom con appenChild <!-- .element: class="fragment" -->
 
 ----
 
@@ -66,7 +66,7 @@ Ogni update avviene principalmente in 3 steps:
 
 ### Re-render (Update)
 
-* Render avviene - uno state / prop vengono aggiornati <!-- .element: class="fragment" -->
+* Render viene triggerato - State / props vengono aggiornati <!-- .element: class="fragment" -->
 * Rendering component - precise modifiche sul DOM vengono calcolate / determinate in base alle modifiche fatte <!-- .element: class="fragment" -->
 * Consegna sul DOM - precise modifiche sul DOM vengono applicate sul DOM <!-- .element: class="fragment" -->
 
@@ -75,7 +75,7 @@ Ogni update avviene principalmente in 3 steps:
 # 2. Update
 
 1. Trigger
-1. Render
+1. Render / Re-render
 1. Commit
 
 ---
@@ -98,8 +98,16 @@ Ogni update avviene principalmente in 3 steps:
 > An immutable object (unchangeable object) is an object whose state cannot be modified after it is created. This is in contrast to a mutable object (changeable object), which can be modified after it is created. <!-- .element: class="fragment" -->
 
 * React usa immutable state per semplificare l'aggiornamento dello state <!-- .element: class="fragment" -->
-* Per determinare se lo state o le props sono aggiornate, react usa shallow reference confronti, non applica deep comparison <!-- .element: class="fragment" -->
+* Per determinare se lo state o le props sono aggiornate, react usa shallow reference checks, non applica deep comparison <!-- .element: class="fragment" -->
 * Immutable state ci permette questo <!-- .element: class="fragment" -->
+
+
+----
+
+## Shallow vs Deep
+
+* Shallow copy significa che ( sub-valori o prop ) sono ancora connesse al dato originale <!-- .element: class="fragment" -->
+* Deep copy significa che tutti i valori o prop sono totalmente disconnessi dal dato originale <!-- .element: class="fragment" -->
 
 
 ----

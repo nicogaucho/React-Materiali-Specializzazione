@@ -2,6 +2,7 @@
 
 ## Viewing
 
+* [00-intro-course](./slides/00-intro-course.md)
 * [01-intro-to-modern-web-development](./slides/01-intro-to-modern-web-development.md)
 * [02-intro-to-react-components](./slides/02-intro-to-react-and-components.md)
 * [03-intro-to-react-styling](./slides/03-react-styling-solutions-and-component-libraries.md)
