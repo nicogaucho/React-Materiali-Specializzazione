@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "React MasterClass Materials",
-  description: "React MasterClass Materials",
+  title: "Specializzazione React",
   cleanUrls: true,
   themeConfig: { 
     logo: "https://asset.brandfetch.io/idXWV8rEmc/id4RiI5qw_.png", 
@@ -11,9 +10,10 @@ export default defineConfig({
     },
     nav: [
       { text: 'Pre-requisiti', link: '/pre-requisiti/' },
-      { text: "Materiali da leggere", link: "/readings/" },
+      { text: "Letture", link: "/readings/" },
       { text: "Slides", link: "/slides/" },
       { text: "Selfworks", link: "/selfworks/" },
+      { text: "Progetto", link: "/project/" },
     ],
     footer: {
       message: 'Usa questo materiale con il solo scopo di apprendimento ed esercizio personale, non a scopo divulgativo o lucrativo. I diritti di divulgazione sono riservati.',
@@ -97,6 +97,45 @@ export default defineConfig({
             }, 
           ],
         }
+      ],
+      '/project/': [
+        {
+          text: "Guidelines",
+          items: [
+            {
+              text: "01 - Setup",
+              link: "/project/guidelines/01-setup.md",
+            },  
+            {
+              text: "02 - Scaffolding project",
+              link: "/project/guidelines/02-scaffolding.md",
+            },
+            {
+              text: "03 - Api Requests",
+              link: "/project/guidelines/03-api-requests.md",
+            },
+            {
+              text: "04 - Dynamic routes",
+              link: "/project/guidelines/04-dynamic-routes.md",
+            },
+            {
+              text: "05 - Custom Hook",
+              link: "/project/guidelines/05-custom-hook.md",
+            }, 
+            {
+              text: "06 - QueryParams search",
+              link: "/project/guidelines/06-qs-search.md",
+            },
+            {
+              text: "07 - Supabase Integration",
+              link: "/project/guidelines/07-supabase.md",
+            },
+            {
+              text: "08 - Authentication",
+              link: "/project/guidelines/08-authentication.md",
+            },
+          ],
+        },
       ],
     },
   },

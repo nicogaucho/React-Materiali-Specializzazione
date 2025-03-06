@@ -10,16 +10,15 @@ revealOptions:
 
 ---
 
-# Context API
+# Global state management
 
 ---
 
 ## Obiettivi del modulo
 
-* Passare dati attraverso componenti <!-- .element: class="fragment" -->
-* Creare una instanza dati da condividere tra i componenenti <!-- .element: class="fragment" -->
+* Comprendere la condivisione di dati tra componenti <!-- .element: class="fragment" -->
+* Come Creare una instanza dati da condividere tra i componenenti <!-- .element: class="fragment" -->
 * Definire useContext hook <!-- .element: class="fragment" -->
-* Definire un custom hook <!-- .element: class="fragment" -->
 
 ---
 
@@ -48,13 +47,13 @@ Dobbiamo definire un AppContext in modo da avere i dati a disposizione in ogni c
 
 ## Esempio
 
-```js 
+```js
 
 export default function App() {
   const [data, setData] = useState([]);
   
   return (
-    <AppContext.Provider value={{ data }}>
+    <AppContext.Provider value={{ data, setData }}>
       <App />
     </AppContext.Provider>
   )
@@ -98,71 +97,32 @@ export default function HomePage() {
 
 ---
 
-## Custom Hook
+## Vantaggi di un Context 
+
+* Global Data Sharing, condivisione dati <!-- .element: class="fragment" -->
+* Avoids Prop Drilling, evito uso di props eccessive <!-- .element: class="fragment" -->
+* Cleaner and More Maintainable Code, migliore manuntenzione del codice <!-- .element: class="fragment" -->
 
 ----
 
-Definizione di Hooking da wikipidia ( cos'è un hook? )
+### Inconvenienti nell'uso del Context API 
 
-* Sono funzioni che tappano in un momento preciso o processo dell'applicazione per creare una funzionalitá personalizzata. 
-* In software development, ci sono hooks ovunque: 
-  * Come middleware hook
-  * Come Webhook
-  * Come response in specific events 
-  * Per estendere una funzionalità ( React )
+Per gestione dello state globale, nel caso volessimo migliorare le performance, evitando eccessivi re-renders, migliorando la leggibiltá e la praticitá del codice, ci sono librerie nell'ecosistema React adatte a questi scopi. 
 
 ----
 
-### Esempio creazione custom Hook
+## Global state management Solutions
 
-```js
-
-function useFetch(url, defaultData) {
-  const [data, setData] = useState(defaultData);
-  useEffect(() => {
-    (async function fetchData() {
-      const response = await fetch(url);
-      const json = await response.json();
-      setData(json);
-    })()
-  }, [url]);
-
-  return {
-    data
-  };
-}
-
-```
-
-----
-
-### uso custom hook nel componente
-
-```js
-
-export default function App() {
-  const { data } = useFetch('https://path/api/v1/data', []);
-
-  return (
-    <div>
-      {data.map((data) => 
-        <Data key={data.id} data={data}/>
-      )}
-    </div>
-  );
-}
-
-```
-
+* [Redux 🪄](https://redux.js.org/)
+* [MobX 🚀](https://mobx.js.org/react-integration.html)
+* [React-Query ⏳](https://tanstack.com/query/latest/docs/framework/react/overview)
+* [Zustand 👏🏻](https://docs.pmnd.rs/zustand/getting-started/introduction)
+* [Easy-peasy 🎉](https://easy-peasy.vercel.app/)
 
 ---
-
-
-
 
 ## Obiettivi modulo recap
 
 * Passare dati attraverso componenti 
 * Creare una instanza dati da condividere tra i componenenti
 * Definire useContext hook 
-* Definire un custom hook

@@ -1,12 +1,12 @@
 const studente = {
-  name: 'Nico Gasparro',
-  eta: 31,
+  name: 'Mario Rossi',
+  eta: 30,
   Materie: ['Matematica', 'Scienze', 'Filosofia'],
   Indirizzo: {
-    strada: 'via padella',
-    citta: 'Rimini',
+    strada: 'Via Padella',
+    citta: 'Roma',
     Stato: 'IT',
-    cap: '12345'
+    cap: '33333'
   }
 };
 

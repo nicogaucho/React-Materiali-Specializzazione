@@ -21,17 +21,17 @@ revealOptions:
 * Spiegare che cosa è React <!-- .element: class="fragment" -->
 * Descrivere como funzionano parole come Virtual DOM, Render e State  <!-- .element: class="fragment" -->
 * Modi di generare una React app  <!-- .element: class="fragment" -->
-* Spiega lo scopo di ogni file in un'app react generata  <!-- .element: class="fragment" -->
+* Spigare lo scopo di ogni file in un'app react generata  <!-- .element: class="fragment" -->
 * Utilizzare JSX per costruire componenti React  <!-- .element: class="fragment" -->
-* Elenca i modi in cui JSX è diverso da HTML normale  <!-- .element: class="fragment" -->
-* Uso di useState per gestire lo stato dei componenti  <!-- .element: class="fragment" -->
+* Elencare i modi in cui JSX è diverso da HTML normale  <!-- .element: class="fragment" -->
+* Usare l'hook useState per gestire lo stato del componente  <!-- .element: class="fragment" -->
 * Utilizzare array map per iterare sui dati in React  <!-- .element: class="fragment" -->
 * Gestire gli eventi DOM su elementi React  <!-- .element: class="fragment" -->
-* Usa React per scomporre un'interfaccia utente in componenti chiaramente definiti  <!-- .element: class="fragment" -->
-* Usa React per costruire gerarchie di componenti  <!-- .element: class="fragment" -->
-* Gestire lo stato dei componenti  <!-- .element: class="fragment" -->
-* Creare componenti di React che comunicano tra loro utilizzando stato e le props  <!-- .element: class="fragment" -->
-* Utilizzare React Developer Tools per eseguire il debug efficace delle app React  <!-- .element: class="fragment" -->
+* Usare React per scomporre un'interfaccia utente in componenti chiaramente definiti  <!-- .element: class="fragment" -->
+* Usare React per costruire gerarchie tra componenti  <!-- .element: class="fragment" -->
+* Gestire lo state tra i componenti  <!-- .element: class="fragment" -->
+* Creare componenti di React che comunicano tra loro utilizzando state props  <!-- .element: class="fragment" -->
+* Utilizzare React Developer Tools per eseguire debug efficace delle app React  <!-- .element: class="fragment" -->
 
 ---
 
@@ -209,7 +209,7 @@ function Video({ video }) {
 
 ---
 
-## Utilizzare JSX per costruire componenti reagire
+## Utilizzare JSX per costruire componenti React
 
 ---
 
@@ -237,19 +237,19 @@ Vedi questo articolo [here](https://www.freecodecamp.org/news/html-vs-jsx-whats-
 
 ---
 
-## Usa React per costruire gerarchie di componenti
+## Usa React per costruire gerarchie tra componenti
 
 ---
 
-## Gestire lo stato di componenti e applicazioni
+## Gestire lo stato tra componenti
 
 ---
 
-## Creare componenti di React che comunicano tra loro utilizzando stato e props
+## Creare componenti di React che comunicano tra loro utilizzando lo stato e le props
 
 ---
 
-## Utilizzare React Developer Tools per eseguire il debug efficace delle app React
+## Utilizzare React Developer Tools per eseguire debug efficace delle app React
 
 ---
 
@@ -259,13 +259,13 @@ Vedi questo articolo [here](https://www.freecodecamp.org/news/html-vs-jsx-whats-
 * Descrivi come funzionano parole come Virtual DOM, Render e State 
 * Usa vite per generare applicazioni React
 * Spiega lo scopo di ogni file in un'app React generata 
-* Utilizzare JSX per creare componenti React
+* Utilizza JSX per creare componenti React
 * Elenca i modi in cui JSX è diverso da HTML normale 
 * Usa useState per gestire lo stato dei componenti 
-* Utilizzare array map per iterare sui dati in React
-* Gestire gli eventi DOM su elementi React
+* Utilizza array map per iterare sui dati in React
+* Gestisci gli eventi DOM su elementi React
 * Usa React per scomporre un'interfaccia utente in componenti chiaramente definiti 
 * Usa React per costruire gerarchie di componenti 
-* Gestire lo stato di componenti e applicazioni 
+* Gestisci lo stato di componenti e applicazioni 
 * Crea componenti di React che comunicano tra loro utilizzando lo stato e le props
-* Utilizzare React Developer Tools per eseguire il debug efficace delle app React 
+* Utilizza React Developer Tools per eseguire debug efficace delle app React 

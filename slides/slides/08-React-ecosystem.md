@@ -94,6 +94,7 @@ revealOptions:
 
 * SSG tutto il possibile al momento della costruzione (build time)
 * SSR tutte le pagine che non erano SSG, renderizzate al primo caricamento
+   * Successivi caricamenti possono comportarsi come CSR/SPA 
 * Deployed a un backend JS environment (VPS, Serverless, Edge etc.)
 
 ----

@@ -69,7 +69,7 @@ Possiamo trattare tutti i nostri file come *moduli* e condividerli nella nostra 
 
 ### Riutilizzo del codice
 
-Se suddividiamo la nostra interfaccia utente in singoli componenti unici, questi componenti possono essere condivisi e riutilizzati nella nostra base di codice. (Aiuto per le librerie di componenti come React, Vue, Angular, Lit)
+Se suddividiamo la nostra interfaccia utente in singoli componenti unici, questi componenti possono essere condivisi e riutilizzati nella nostra code base. (Aiuto per le librerie di componenti come React, Vue, Angular, Lit)
 
 ----
 
@@ -87,7 +87,7 @@ Strumenti come [Babel](https://babeljs.io/) ci permettono di scrivere codice che
 
 ### Page Load Time
 
-Dopo essere *transpiled* il nostro codice può essere *minified* e *bundled* per produrre il minor numero di file e la dimensione del file più piccola possibile per i nostri utenti finali.
+Dopo aver [*transpiled*](https://en.wikipedia.org/wiki/Source-to-source_compiler) il nostro codice può essere [*minified*](https://en.wikipedia.org/wiki/Minification_(programming)) e [*bundled*](https://altcademy.com/blog/what-is-bundling-in-javascript/) per produrre il minor numero di file e la dimensione del file più piccola possibile per i nostri utenti finali.
 
 ---
 

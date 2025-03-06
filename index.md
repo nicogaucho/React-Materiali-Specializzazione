@@ -2,15 +2,15 @@
 layout: home
 
 hero:
-  name: "React MasterClass Materials"
-  tagline: In questa pagina troverai il materiale necessario per partecipare attivamente a questo corso React. 
+  name: "Specializzazione React"
+  tagline: In questa app troverai il materiale sviluppato durante questo corso React. 
   image: './assets/react-logo.png'
   actions:
     - theme: alt
       text: Pre-requisiti
       link: /pre-requisiti/
     - theme: alt
-      text: Materiali da leggere
+      text: Letture
       link: /readings/
     - theme: alt
       text: Slides
@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: Selfworks
       link: /selfworks/
+    - theme: alt
+      text: Progetto
+      link: /project/
 
 features:
   - icon: ⚙️

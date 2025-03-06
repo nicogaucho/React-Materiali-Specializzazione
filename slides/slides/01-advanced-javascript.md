@@ -31,12 +31,55 @@ revealOptions:
 
 ----
 
-### Architettura software fatta da pure, isolated, reusable functions
+### Perchè imparere questo paradigma di programmazione?
 
+* Paradigma con il quale si basa lo sviluppo web in React. <!-- .element: class="fragment" -->
+* Riuscire ad esprimere la nostra logica attraverso funzioni e solo funzioni <!-- .element: class="fragment" -->
+* Riuscire a limitare effetti di risposta che non siano computazionalmente il risultato di una elaborazione degli input in ingresso. <!-- .element: class="fragment" -->
+* Riuscire a trattare le funzioni come qualsiasi altro tipo di variabile <!-- .element: class="fragment" -->
+
+----
+
+### Architettura software fatta da pure, stateless, reusable functions
+
+* Evita mutabilità e side-effects, I dati sono immutabili => data-in, new data-out <!-- .element: class="fragment" -->
 * Non esiste una dipendenza rispetto allo stato del programma, il quale include variabili globali che sono soggette ad aggiornamenti. <!-- .element: class="fragment" -->
-* higher order function è una funzione che accetta una funzione come argomento, restituisce una funzione o entrambi! Puoi utilizzare funzioni di ordine superiore per smettere di ripeterti nel codice. <!-- .element: class="fragment" -->
-* Avoid mutability e side-effects <!-- .element: class="fragment" -->
+* Usa funzioni che garantiscano l'immutabilità dello stato dell’applicazione. <!-- .element: class="fragment" -->
+* Higher order function è una funzione che accetta una funzione come argomento, restituisce una funzione o entrambi! Puoi utilizzare funzioni di ordine superiore per smettere di ripeterti nel codice. <!-- .element: class="fragment" -->
 
+----
+
+## Approccio Functional 
+
+```js [1-4|7-13|16-19]
+    const name = "Ana";
+    const greet = "Hello";
+    
+    console.log(greet + ' ' + name);
+
+
+    const name = "Ana";
+    const greet = "Hello";
+
+    function greet() {
+      return greet + ' ' + name;
+    }
+    console.log(greet());
+
+
+    function greet(name) {
+      return 'Hello ' + name;
+    }
+    console.log(greet('Ana'));
+```
+
+----
+
+## Javascript per il functional programming
+
+* higher order function
+* closures
+* pure functions
 
 ----
 

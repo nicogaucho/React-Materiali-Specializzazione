@@ -16,8 +16,8 @@ revealOptions:
 
 ## Obiettivi del modulo
 
-* Gestione dello state con React <!-- .element: class="fragment" -->
-* Maneggiare la form submission con react <!-- .element: class="fragment" -->
+* Gestire lo state con React <!-- .element: class="fragment" -->
+* Gestire la form submission con react <!-- .element: class="fragment" -->
 * Passare funzioni o funzionalità e oggetti come props tra componenti React <!-- .element: class="fragment" -->
 * Sopra-elevare lo state al top level dell'applicazione <!-- .element: class="fragment" -->
 

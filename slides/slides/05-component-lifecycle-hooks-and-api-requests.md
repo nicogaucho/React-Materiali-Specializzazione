@@ -150,7 +150,7 @@ function deepComparePerson(a, b) {
 
 ## Aggiorare la proprietá di un oggetto
 
-```js [1|2]
+```js
 const person = { name: 'NG', favNumber: 42 };
 person.name = 'Cool NG';
 ```
@@ -161,7 +161,7 @@ person.name = 'Cool NG';
 
 ## Aggiorare la proprietá di un oggetto
 
-```js [1|2]
+```js
 const person = { name: 'NG', favNumber: 42 };
 const nextPerson = { ...person, name: 'Cool NG' };
 ```
@@ -172,7 +172,7 @@ const nextPerson = { ...person, name: 'Cool NG' };
 ----
 React ci da accesso al valore precedente per utilizzarlo nei nostri aggiornamenti  
 
-```js [1|3-8|5|3-8]
+```js 
 const [person, setPerson] = useState({ name: 'NG', favNumber: 42 });
 
 const makeCool = () => {
@@ -194,6 +194,12 @@ const makeCool = () => {
 > In computer science, an operation, function or expression is said to have a side effect if it modifies some state variable value(s) outside its local environment, which is to say if it has any observable effect other than its primary effect of returning a value to the invoker of the operation.  <!-- .element: class="fragment" -->
 
 [via Wikipedia](https://en.wikipedia.org/wiki/Side_effect_(computer_science))
+
+----
+
+### Sincronizzare i componenti con Effetti esterni
+
+Se volessimo eseguire del codice dopo l'effettivo rendering dei componenti che utilizzi o crei dei collegamenti a sistemi esterni al componente stesso, dobbiamo chiedere a React l'uso di un effetto proveniente dall'esterno. 
 
 ----
 

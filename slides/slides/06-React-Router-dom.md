@@ -113,4 +113,3 @@ sequenceDiagram
 
 * Definire Client Side Routing e Single Page Application
 * Creare una multi page React app con React Router
-
