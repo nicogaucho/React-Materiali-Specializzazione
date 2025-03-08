@@ -111,7 +111,7 @@ Dovrebbe restituire ```Success. No rows returned```
 
 Nella sezione della dashboard Database/Tables dovrebbe esserci la nostra tabella ```profiles``` e nella sezione Storage/All bucket dovrebbe esserci il nostro storage ```avatars```
 
-## Register and login users
+## Register users
 
 Dopo aver configurato il nostro database, possiamo adesso registrare, aggiungere utenti attraverso le API messe a disposizione da supabase dal nostro progetto React.
 
@@ -168,7 +168,7 @@ In Header.jsx:
 
 ![An image](../../assets/code-header-login-register-links.png)
 
-## State Form management and Validation
+## Validation state form management
 
 Nella pagina register/index.jsx definiamo il markup del componente RegisterPage.jsx.
 Il componente RegisterPage presenterá un form con i campi:
@@ -200,7 +200,7 @@ In RegisterPage.jsx:
 
 Dopo aver superato la nostra validazione con zod lato client... Il codice precedente stampa semplicemente in console il formState. Quello che faremo sarà estrapolare dal formState i campi necessari per chiamare la funzione supabase ```auth.signUp``` al ```onSubmit``` del form.
 
-Nella funzione ```onSubmit```:
+Nella funzione ```onSubmit``` andreamo a modificare per usare l'API di supabase:
 
 ```jsx
 const onSubmit = async (event) => {
@@ -244,3 +244,107 @@ In Table Editor/profile table 🎉
 
 ![An image](../../assets/nico-profile.png)
 
+Da notare che:
+
+```js
+await new Promise((resolve) => setTimeout(resolve, 1000));
+navigate("/");
+```
+
+usati nella funzione ```onSubmit``` del form di registrazione, non fanno altro che generare un piccolo delay di 1 secondo e ridirigerci alla pagina homepage.
+
+## Retrive session and logout
+
+Adesso andreamo nel layout e nello specifico in ```Header``` component a otterene i dati e la sessione dell'utente attualmente autenticato dopo la registrazione, per mostrare un bottone di logout in caso di una sessione attiva aperta.
+
+Useremo le API di supabase per accedere a queste informazioni, su [Auth-api](https://supabase.com/docs/reference/javascript/auth-api) è possibile vedere tutte le API a disposizione per l'autenticazione
+
+In Header.jsx:
+
+![An image](../../assets/code-retrive-session.png)
+
+L'oggetto della sessione attiva dovrebbe risultare cosi:
+
+![An image](../../assets/session-console.png)
+
+### Logout
+
+Attraverso il conditional rendering mostriamo un bottone per consentire all'utente anche di fare logout dalla piattaforma.
+
+Implementiamo la funzione API logout di supabase al ```onClick``` del bottone logout.
+
+In Header.jsx:
+
+![An image](../../assets/code-logout-session.png)
+
+## Login users
+
+### Signing in with an email and password
+
+La funzione signInWithPassword permette agli utenti dopo la registrazione l'accesso mediante quello specifico account, ad esempio:
+
+```js
+const { data, error } = await supabase.auth.signInWithPassword({
+  email: 'example@email.com',
+  password: 'example-password',
+})
+
+```
+
+### SignIn Form
+
+Come primo step, nel nostro progetto creamo un from per il login degli utenti. Avremo una pagina dedicata al login. Quindi ci occuperemo di creare la pagina login in /pages e la rotta nel routing.jsx.
+
+```.
+└─ src/                   # source dir
+    ├─ assets/
+    ├─ layout/
+    ├─ components/
+    ├─ pages/
+      └─ homepage/
+        └─ index.jsx
+      └─ error/
+        └─ index.jsx
+      └─ genrepage/
+        └─ index.jsx
+      └─ gamepage/
+        └─ index.jsx
+      └─ searchpage/
+        └─ index.jsx
+      └─ register/
+        └─ index.jsx
+      └─ login/
+        └─ index.jsx
+    ├─ routes/
+    ├─ App.jsx
+    ├─ global.css
+    └─ main.jsx
+```
+
+In routing.jsx aggiungiamo la rotta ricordandoci di importare il componente:
+
+```js
+<Route path="/login" element={<LoginPage />}/>
+```
+
+Aggiungiamo al componente Header.jsx un bottone o link per accedere alla pagina /login
+
+In Header.jsx modifichiamo:
+
+```jsx
+<li>
+  <Link to="/login" className="secondary">Login</Link>
+</li>
+```
+
+In login/index.jsx, implementiamo lo stesso codice di register per la validazione del login form.
+Il componente LoginPage presenterá un form con i campi:
+
+* Email
+* Password
+
+Dopo aver superato la nostra validazione con zod lato client... Quello che faremo sarà estrapolare dal formState i campi necessari per chiamare la funzione supabase auth.signInWithPassword al onSubmit del form come abbiamo fatto per la registazione.
+
+![An image](../../assets/code-login-form.png)
+
+Il nostro flusso di *autenticazione* utente è completato, l'utente sarà in grado di registrarsi, accedere tramite login e fare logout dalla piattaforma.
