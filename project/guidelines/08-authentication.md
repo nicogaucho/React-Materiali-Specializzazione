@@ -13,6 +13,7 @@ Supabase Auth utilizza JSON Web Tokens (JWTs) per l'autenticazione e si integra 
 - Può essere collegato ad altre tabelle tramite funzioni ```trigger``` e ```foreign key references```  
 
 Supabase Auth inoltre supporta diversi metodi di autenticazione, tra cui:
+
 - Password, Magic Link e altri...
 
 Noi faremo uso solo della password per semplificare le operazioni.
@@ -90,18 +91,17 @@ create policy "Avatar images are publicly accessible." on storage.objects
   for select using (bucket_id = 'avatars');
 
 create policy "Anyone can upload an avatar." on storage.objects
-  for insert with check (bucket_id = 'avatars'); 
+  for insert with check (bucket_id = 'avatars');
 
 ```
 
 Lo Script eseguirá il codice SQL generando per noi:
 
-* Tabella```public.profiles``` con campi: id, updated_at, username, first_name, last_name, avatar_url
-* Una funzione ```handle_new_user()``` per l'inserimento dei dati nella tabella ```public.profiles``` e una funzione trigger che aggiornerá la tabella ogni volta che un utente viene registrato.
-* Delle Row Level Security (RLS) per l'accesibiltá alla tabella ```public.profiles```
-* Il setup di uno storage ```Avatars``` per l'inserimento degli assets statici.
-* Delle Row Level Security (RLS) per l'accesibiltá dello storage ```Avatars```
-
+- Tabella```public.profiles``` con campi: id, updated_at, username, first_name, last_name, avatar_url
+- Una funzione ```handle_new_user()``` per l'inserimento dei dati nella tabella ```public.profiles``` e una funzione trigger che aggiornerá la tabella ogni volta che un utente viene registrato.
+- Delle Row Level Security (RLS) per l'accesibiltá alla tabella ```public.profiles```
+- Il setup di uno storage ```Avatars``` per l'inserimento degli assets statici.
+- Delle Row Level Security (RLS) per l'accesibiltá dello storage ```Avatars```
 
 Dopo aver copiato lo snippet SQL e incollato nella SQL editor, eseguiamo il codice cliccando su ```run```
 
@@ -172,11 +172,12 @@ In Header.jsx:
 
 Nella pagina register/index.jsx definiamo il markup del componente RegisterPage.jsx.
 Il componente RegisterPage presenterá un form con i campi:
-* Email
-* firstName
-* LastName
-* Username
-* Password
+
+- Email
+- firstName
+- LastName
+- Username
+- Password
 
 Ogni campo avrá implementato un sistema di validazione mediante la schema validation library ```zod```
 
@@ -340,8 +341,8 @@ In Header.jsx modifichiamo:
 In login/index.jsx, implementiamo lo stesso codice di register per la validazione del login form.
 Il componente LoginPage presenterá un form con i campi:
 
-* Email
-* Password
+- Email
+- Password
 
 Dopo aver superato la nostra validazione con zod lato client... Quello che faremo sarà estrapolare dal formState i campi necessari per chiamare la funzione supabase auth.signInWithPassword al onSubmit del form come abbiamo fatto per la registazione.
 

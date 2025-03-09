@@ -4,7 +4,7 @@ export default defineConfig({
   title: "Specializzazione React",
   cleanUrls: true,
   themeConfig: { 
-    logo: "https://asset.brandfetch.io/idXWV8rEmc/id4RiI5qw_.png", 
+    logo: "https://asset.brandfetch.io/idXWV8rEmc/id4RiI5qw_.png",
     search: {
       provider: 'local'
     },
@@ -133,6 +133,10 @@ export default defineConfig({
             {
               text: "08 - Authentication",
               link: "/project/guidelines/08-authentication.md",
+            },
+            {
+              text: "09 - SessionProvider",
+              link: "/project/guidelines/09-session-provider.md",
             },
           ],
         },
