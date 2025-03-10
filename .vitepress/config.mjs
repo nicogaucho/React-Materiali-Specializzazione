@@ -138,6 +138,14 @@ export default defineConfig({
               text: "09 - SessionProvider",
               link: "/project/guidelines/09-session-provider.md",
             },
+            {
+              text: "10 - Update Profile",
+              link: "/project/guidelines/10-update-profile.md",
+            },
+            {
+              text: "11 - Favorites List",
+              link: "/project/guidelines/11-list-favorites.md",
+            },
           ],
         },
       ],

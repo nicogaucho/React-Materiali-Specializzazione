@@ -8,3 +8,6 @@
 * [06-QueryParams-search](./guidelines/06-qs-search.md)
 * [07-Supabase-Integration](./guidelines/07-supabase.md)
 * [08-Authentication](./guidelines/08-authentication.md)
+* [09-SessionProvider](./guidelines/09-session-provider.md)
+* [10-Update-Profile](./guidelines/10-update-profile.md)
+* [11-Favorites-List](./guidelines/11-list-favorites.md)
