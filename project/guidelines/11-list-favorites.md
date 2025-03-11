@@ -1,6 +1,6 @@
 # Favorites List
 
-Da questo momento consetiremoo agli utenti autenticati la creazione e la gestione di una lista giochi preferiti dalla piattaforma.
+Da questo momento consetiremo agli utenti autenticati la creazione e la gestione di una lista giochi preferiti dalla piattaforma.
 
 ## Table public.favorites
 
@@ -234,3 +234,13 @@ Come ultimo passaggio potremmo modificare ```ToggleFavorite.jsx``` usando finalm
 In ToggleFavorite.jsx:
 
 ![An image](../../assets/code-toggle-favorites-useContext.png)
+
+## Managing Favorites List
+
+Adessso che abbiamo i favoriti condivisi in modo globale dal contesto, possiamo gestire questi ultimi anche dalla pagina profilo utente.
+
+Nella pagina profile/index.jsx al componente ```ProfilePage``` inseriremo la lista dei favoriti:
+
+![An image](../../assets/code-favorites-managing-profile.png)
+
+Abbiamo cosi accesso hai giochi favoriti e potró interagire con questi ultimi anche dalla pagina profile.
