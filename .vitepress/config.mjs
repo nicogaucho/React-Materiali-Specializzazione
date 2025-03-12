@@ -146,6 +146,10 @@ export default defineConfig({
               text: "11 - Favorites List",
               link: "/project/guidelines/11-list-favorites.md",
             },
+            {
+              text: "12 - Realtime Game Chat",
+              link: "/project/guidelines/12-realtime-gamechat.md",
+            },
           ],
         },
       ],
