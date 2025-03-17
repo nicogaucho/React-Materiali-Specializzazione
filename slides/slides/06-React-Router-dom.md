@@ -6,7 +6,7 @@ revealOptions:
 ---
 
 <img src="https://aulab.it/img/logo-aulab-horizontal-white.png">
-<h3 class="r-fit-text">REACT MASTERCLASS</h3>
+<h3 class="r-fit-text">SPECIALIZZAZIONE REACT</h3>
 
 ---
 

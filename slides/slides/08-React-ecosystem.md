@@ -6,7 +6,7 @@ revealOptions:
 ---
 
 <img src="https://aulab.it/img/logo-aulab-horizontal-white.png">
-<h3 class="r-fit-text">REACT MASTERCLASS</h3>
+<h3 class="r-fit-text">SPECIALIZZAZIONE REACT</h3>
 
 ---
 
@@ -16,7 +16,6 @@ revealOptions:
 
 ## Topics
 
-* Class Components <!-- .element: class="fragment" -->
 * Build Tools <!-- .element: class="fragment" -->
 * Awesome React <!-- .element: class="fragment" -->
 * Frameworks / Project Generation <!-- .element: class="fragment" -->
@@ -31,10 +30,6 @@ revealOptions:
 * Hook Librerie <!-- .element: class="fragment" -->
 * TypeScript Risorse <!-- .element: class="fragment" -->
 * App Idee <!-- .element: class="fragment" -->
-
----
-
-## Class Components
 
 ---
 

@@ -118,4 +118,3 @@ in ```useEffect``` avverrà la sottscrizione al canale messages, su tutti gli ev
 ```scrollSmoothToBottom``` e ```dayjs``` sono solo funzioni di utilità e formattazione a discrezione dello studente.
 
 🎉 Abbiamo completato il nostro panello di realtime chat usando le api realtime di supabase.
-
