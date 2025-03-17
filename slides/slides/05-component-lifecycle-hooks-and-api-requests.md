@@ -6,7 +6,7 @@ revealOptions:
 ---
 
 <img src="https://aulab.it/img/logo-aulab-horizontal-white.png">
-<h3 class="r-fit-text">REACT MASTERCLASS</h3>
+<h3 class="r-fit-text">SPECIALIZZAZIONE REACT</h3>
 
 ---
 
@@ -16,14 +16,14 @@ revealOptions:
 
 ## Obiettivi del modulo
 
-* Descrivere come funciona React component lifecycle <!-- .element: class="fragment" -->
+* Descrivere come funziona React component lifecycle <!-- .element: class="fragment" -->
 * Usare feature moderne React come useState e useEffect <!-- .element: class="fragment" -->
 * Fare una chiamata API con React <!-- .element: class="fragment" -->
 * Estrarre useEffect e useState in un hook custom riutilizzabile <!-- .element: class="fragment" -->
 
 ---
 
-# Descrivere come funciona React component lifecycle
+# Descrivere come funziona React component lifecycle
 
 ----
 
@@ -107,7 +107,7 @@ Ogni update avviene principalmente in 3 steps:
 ## Shallow vs Deep
 
 * Shallow copy significa che ( sub-valori o prop ) sono ancora connesse al dato originale <!-- .element: class="fragment" -->
-* Deep copy significa che tutti i valori o prop sono totalmente disconnessi dal dato originale <!-- .element: class="fragment" -->
+* Deep comparison significa che tutti i valori o prop sono totalmente disconnessi dal dato originale <!-- .element: class="fragment" -->
 
 
 ----
@@ -124,7 +124,7 @@ console.log(personA === personB); // Cosa appare in console??
 
 * personA e personB sono oggetti diversi <!-- .element: class="fragment" -->
 * Vengono salvati in memoria separatamente <!-- .element: class="fragment" -->
-* Per un confronto appopriato dobbiamo usare delle 'deep copies' <!-- .element: class="fragment" -->
+* Per un confronto appopriato dobbiamo usare la 'deep comparison' <!-- .element: class="fragment" -->
 
 ```js [2|3|4|5]
 function deepComparePerson(a, b) {
