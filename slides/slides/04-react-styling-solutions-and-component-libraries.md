@@ -24,10 +24,3 @@ revealOptions:
 * Uso di librerie per componenti React come Material UI, Chakra UI o React Bootstrap <!-- .element: class="fragment" -->
 
 ---
-
-
-
-
-
-
-
