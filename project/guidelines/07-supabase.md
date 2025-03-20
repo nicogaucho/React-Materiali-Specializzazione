@@ -54,7 +54,7 @@ npm install @supabase/supabase-js
 
 In supabase-client.js:
 
-![An image](../../assets/code-createclient.png)
+![An image](../../assets/code-createClient.png)
 
 In questo modo dovremmo avere accesso a tutti gli endpoint delle api fornite da supabase all'interno del nostro progetto react.
 
