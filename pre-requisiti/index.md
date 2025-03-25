@@ -1,4 +1,4 @@
-# React Masterclass pre-requisiti
+# Specializzazione React pre-requisiti
 
 Per ottenere un esito positivo da questo corso, ti raccomando usare i seguenti strumenti:
 
