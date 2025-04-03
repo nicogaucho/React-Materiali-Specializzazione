@@ -4,14 +4,16 @@ Da questo momento consetiremo agli utenti autenticati la creazione e la gestione
 
 ## Table public.favorites
 
-Come primo passo avremo bisogno di una tabella nel database per salvare la lista creata dall'utente.
+Come primo passo avremo bisogno di una nuova tabella nel database per salvare la lista creata dagli utenti.
 
 Avremo bisogno di generere la tabella ```public.favorites``` come abbiamo già fatto con ```public.profiles```.
 
 Assicuriamoci di proteggere sempre la tabella associata agli utenti abilitando Row Level Security (RLS) e facendo riferimento alla tabella auth.users per garantire l'integrità dei dati. Useremo on delete cascade per mantenere le relazioni coerenti.
 
-Per ottenere tutto questo dovremmo passare uno script direttamente nella dashboard nella pagina SQL Editor con le seguenti direttive:
+Per ottenere tutto questo dovremmo passare uno script direttamente nella dashboard, nella pagina SQL Editor, generando una nuova query con le seguenti direttive:
 
+( ES. per generare una nuova query SQL Editor ci mette a disposizione un tasto + in alto a destra dove solo elencate tutte le query eseguite )
+  
 ```sql
 -- Create a table for public favorites
 create table public.favorites (
