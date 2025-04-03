@@ -12,3 +12,4 @@
 * [10-Update-Profile](./guidelines/10-update-profile.md)
 * [11-Favorites-List](./guidelines/11-list-favorites.md)
 * [12-Realtime-GameChat](./guidelines/12-realtime-gamechat.md)
+* [13-Deploy](./guidelines/13-deploy.md)

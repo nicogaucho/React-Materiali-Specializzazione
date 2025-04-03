@@ -150,6 +150,10 @@ export default defineConfig({
               text: "12 - Realtime Game Chat",
               link: "/project/guidelines/12-realtime-gamechat.md",
             },
+            {
+              text: "13 - Deploy",
+              link: "/project/guidelines/13-deploy.md",
+            },
           ],
         },
       ],

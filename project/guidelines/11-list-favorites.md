@@ -13,7 +13,7 @@ Assicuriamoci di proteggere sempre la tabella associata agli utenti abilitando R
 Per ottenere tutto questo dovremmo passare uno script direttamente nella dashboard, nella pagina SQL Editor, generando una nuova query con le seguenti direttive:
 
 ( ES. per generare una nuova query SQL Editor ci mette a disposizione un tasto + in alto a destra dove solo elencate tutte le query eseguite )
-  
+
 ```sql
 -- Create a table for public favorites
 create table public.favorites (
@@ -159,11 +159,11 @@ const addFavorites = async (game) => {
 ### removeFavorites function
 
 ```js
-const removeFavorite = async (game) => {
+const removeFavorite = async (gameId) => {
     await supabase
       .from("favorites")
       .delete()
-      .eq("game_id", game.id)
+      .eq("game_id", gameId)
       .eq("user_id", session?.user.id);
   };
 ```
@@ -205,7 +205,7 @@ Tutte queste funzionalità verranno messe a disposizione globalmente grazie al c
 
 In FavoritesProvider.jsx:
 
-![An image](../../assets/code-favorites-provider.png)
+![An image](../../assets/code-FavoriteProvider.png)
 
 ### Wrapping FavoritesProvider
 
@@ -235,7 +235,7 @@ Come ultimo passaggio potremmo modificare ```ToggleFavorite.jsx``` usando finalm
 
 In ToggleFavorite.jsx:
 
-![An image](../../assets/code-toggle-favorites-useContext.png)
+![An image](../../assets/code-toggle-favorite.png)
 
 ## Managing Favorites List
 
@@ -243,6 +243,6 @@ Adessso che abbiamo i favoriti condivisi in modo globale dal contesto, possiamo 
 
 Nella pagina profile/index.jsx al componente ```ProfilePage``` inseriremo la lista dei favoriti:
 
-![An image](../../assets/code-favorites-managing-profile.png)
+![An image](../../assets/code-ProfilePage.png)
 
 Abbiamo cosi accesso hai giochi favoriti e potró interagire con questi ultimi anche dalla pagina profile.
