@@ -4,7 +4,7 @@ I links per ciascuna lezione sono in ordine di importanza. Non è necessario leg
 
 L'obiettivo di queste letture è farti riflettere su ciò che verrà trattato nella lezione.
 
-Tieni presente che non sono presenti pre-readings materials per ogni lezione. 
+Tieni presente che non sono presenti pre-readings materials per ogni lezione.
 
 ## 01 - Intro Modern Web Development
 
